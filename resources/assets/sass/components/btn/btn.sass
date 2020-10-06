@@ -1,0 +1,62 @@
+.btn
+	color: $btn_color
+	display: inline-block
+	border: 1px solid $white
+	padding: $btn_padding
+	border-radius: 2px
+	transition: border .2s, background .2s, color .2s
+	font-size: 14px
+	letter-spacing: 0.01em
+	text-align: center
+	cursor: pointer
+	max-width: 100%
+	appearance: none
+	padding: 15px 30px 14px
+
+	&.-upper
+		text-transform: uppercase
+
+	&:not(.btn-grad):hover
+		color: $blue_link
+		border-color: $blue_link
+
+	&.btn-grad
+		background-image: linear-gradient(to right, $grad_start, $grad_end)
+		border: none
+		&:hover
+			background-image: linear-gradient(to left, $grad_start, $grad_end)
+			color: #fff
+
+	&.btn-orang
+		background-image: linear-gradient(to right, $orange_start, $orange_end)
+		border: none
+		&:hover
+			background-image: linear-gradient(to left, $orange_start, $orange_end)
+			color: #fff
+
+	&.-w240
+		width: 240px
+
+	&.-margin-right-10
+	  	margin-right: 10px
+
+	&.-large
+		padding: 15px 30px 14px
+
+	&.-mid
+		padding: 7px 20px 8px
+
+	&.-small
+		font-size: 14px
+		font-weight: 600
+		padding: $btn_small_padding
+
+	&.-smaller
+		font-size: 14px
+		padding: 5px 10px
+
+	&.-smallest
+		font-size: 12px
+		padding: 3px 10px
+		min-width: 86px
+		line-height: 1.2

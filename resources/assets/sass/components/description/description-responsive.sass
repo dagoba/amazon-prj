@@ -1,0 +1,29 @@
+.description
+  @media #{$tablet}
+    &--flex
+      flex-wrap: wrap
+
+    &--title
+      width: 100%
+      text-align: center
+
+    &--text
+      width: 100%
+
+  @media #{$tablet-small}
+    &--title
+      font-size: 24px
+
+    &--text
+      font-size: 16px
+
+.cards
+  @media #{$tablet}
+    &--flex
+      flex-wrap: wrap
+    &--item
+      width: calc(100%/3)
+
+  @media #{$mobile}
+    &--item
+      width: calc(100%/2)

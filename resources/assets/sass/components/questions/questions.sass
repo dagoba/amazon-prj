@@ -1,0 +1,71 @@
+.questions
+  padding: 50px 70px
+
+  &.-white
+    background-color: white
+
+  &--section
+    padding-bottom: 30px
+    margin-bottom: 30px
+    border-bottom: 2px solid #ccc
+
+    &_left
+      div
+        margin-right: 200px
+        @media #{$tablet}
+          margin: 0
+
+    &_right
+      div
+        margin-left: 400px
+        @media #{$tablet}
+          margin: 0
+
+  &--block
+    padding-left: 70px
+    position: relative
+
+  &--title
+    font-size: 42px
+    @include gradient-text
+    display: inline-block
+    font-weight: normal
+    position: relative
+
+  &--text
+    padding-left: 70px
+    position: relative
+
+  &--info
+    width: 50px
+    background-color: #494850
+    color: #fff
+    font-size: 37px
+    display: inline-block
+    position: absolute
+    text-align: center
+    line-height: normal
+    left: 0
+
+    &_q
+      margin-top: 10px
+
+  &--item
+    padding-left: 20px
+    position: relative
+    margin-bottom: 7px
+
+    &::before
+      width: 6px
+      height: 6px
+      content: ''
+      position: absolute
+      left: 0
+      border-radius: 5px
+      top: calc(50% - 3px)
+      background-color: #00edab
+
+  &--number
+    font-size: 27px
+    color: #00edab
+

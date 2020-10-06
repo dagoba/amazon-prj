@@ -1,0 +1,28 @@
+.footer
+  @media #{$tablet}
+    &--nav
+      flex-wrap: wrap
+
+      &_col
+        &.-logo
+          width: 100%
+      &_logo
+        margin: 0px auto 20px
+  @media #{$tablet-small}
+    &--nav
+      &_col
+        &.-payment
+          width: 100%
+          margin-top: 20px
+          text-align: center
+  @media #{$mobile}
+    &--reserved
+      &_flex
+        flex-wrap: wrap
+        text-align: center
+      &_text
+        width: 100%
+    &--nav
+      &_col
+        width: 100%
+        text-align: center

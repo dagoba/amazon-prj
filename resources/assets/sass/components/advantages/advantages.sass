@@ -1,0 +1,58 @@
+.advantages
+  padding-top: $tb_padding
+  padding-bottom: $tb_padding
+  background: transparent url($img_path + 'benefits.jpg') no-repeat left center / cover
+
+  &--title
+    font-size: $title_size
+    color: $white
+    text-align: center
+  &--list
+    display: flex
+    flex-wrap: wrap
+    &_item
+      width: 33.33%
+      padding: 70px 50px
+      &:hover
+        box-shadow: $box_shadow
+
+.adva_title
+  color: $white
+  font-size: 22px
+  padding-left: 60px
+
+  &:before
+    width: 50px
+    height: 53px
+    left: 0
+  &.-basket
+    &:before
+      background-position: -67px -99px
+
+  &.-lock
+    &:before
+      background-position: -128px -99px
+
+  &.-money
+    &:before
+      background-position: -187px -99px
+      width: 55px
+  &.-support
+    &:before
+      background-position: -249px -99px
+      width: 55px
+
+  &.-origin
+    &:before
+      background-position: -309px -99px
+      width: 56px
+
+  &.-people
+    &:before
+      background-position: -246px -99px
+      width: 58px
+
+.adva_text
+  color: $white
+  margin: 20px 0 0
+

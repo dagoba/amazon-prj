@@ -1,0 +1,86 @@
+.banner
+  width: 100%
+  height: 598px
+  background: transparent url($img_path + 'banner.jpg') no-repeat center center / cover
+  position: relative
+  &--flex
+    display: flex
+    align-items: center
+    height: 100%
+
+  &--tag
+    position: relative
+    float: left
+
+
+  &--btn_left
+    margin-left: 50px
+    @media #{$tablet}
+      margin-left: 0
+
+  &--text
+    float: left
+    position: relative
+    padding-left: 30px
+    &_white
+      color: $white
+      font-size: 17px
+      margin-bottom: 40px
+    &_title
+      font-size: 60px
+      color: #fff
+      display: inline-block
+      font-weight: normal
+      margin-top: 60px
+
+  &--line_top
+    width: 550px
+    position: absolute
+    top: -60px
+    left: 30px
+    height: 7px
+    background-color: #fff
+    @media #{$tablet}
+      display: none
+
+    &:before
+      content: ''
+      position: absolute
+      height: 100px
+      width: 7px
+      background-color: #fff
+
+    &:after
+      content: ''
+      position: absolute
+      height: 100px
+      width: 7px
+      background-color: #fff
+      right: 0
+
+  &--line_bottom
+    width: 550px
+    position: absolute
+    bottom: -60px
+    left: 30px
+    height: 7px
+    background-color: #fff
+    @media #{$tablet}
+      display: none
+
+    &:before
+      content: ''
+      position: absolute
+      height: 100px
+      width: 7px
+      background-color: #fff
+      top: -100px
+
+    &:after
+      content: ''
+      position: absolute
+      height: 100px
+      width: 7px
+      background-color: #fff
+      right: 0
+      top: -100px

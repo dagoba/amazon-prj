@@ -1,0 +1,21 @@
+.layout
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+	&--header
+		flex: 0 0 auto
+		// min-height: $header_height
+
+	&--container
+		flex: 1 0 auto
+		display: flex
+		flex-direction: column
+		width: 100%
+		background-image: url($img_path + 'top_left.svg'), url($img_path + 'top_right.svg'), url($img_path + 'bottom_left.svg')
+		background-repeat: no-repeat, no-repeat, no-repeat
+		background-size: 155px, 155px, 155px
+		background-position: 5% 20%, 95% 10%, 5% 90%
+
+	&--footer
+		flex: 0 0 auto

@@ -1,0 +1,133 @@
+.header
+  background: $header_bg
+
+  &--lang
+    color: #fff
+    padding-left: 34px
+    float: left
+    margin-top: 18px
+
+    &_ru
+      background: transparent url($img_path + 'ru.svg') no-repeat 0 0 / 27px 18px
+
+    &_en
+      background: transparent url($img_path + 'usa.svg') no-repeat 0 0 / 27px 18px
+
+  &--name
+    color: #fff
+    background: $header_bg
+    margin-left: 35px
+    font-size: 16px
+    white-space: nowrap
+    display: inline-block
+    padding: 12px 0px
+
+  &--contact
+    height: 60px
+    border-bottom: 1px solid #46455a
+    text-align: right
+
+    &_link
+      color: $white
+      padding-left: 30px
+      margin-left: 20px
+      display: inline-block
+      margin-top: 18px
+
+      &::before
+        width: 20px
+        height: 22px
+        left: 0
+        background-position-y: -19px
+
+      &_mail
+        &::before
+          background-position: -28px -15px
+          width: 23px
+          
+  &--logo
+    width: 200px
+    height: 45px
+    display: block
+    background-position-x: -20px
+    
+  &--nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 90px
+
+.nav-block
+  &-item
+    display: inline-block
+    margin-left: 10px
+
+  &_link
+    color: $white
+    padding: 10px 9px
+
+    &:hover
+      color: #00eaff
+
+.profile
+  color: $white
+  margin-right: 10px
+  &:hover
+    color: $blue_link
+
+.menu, .outhamb
+  height: 46px
+  width: 50px
+  position: relative
+  z-index: 10
+  float: right
+  margin-top: 5px
+  margin-left: 15px
+
+  &:hover
+    cursor: pointer
+
+.hambergerIcon
+  z-index: 10
+  height: 3px
+  width: 40px
+  position: absolute
+  top: 50%
+  left: 50%
+  border-radius: 50px
+  background-color: #fff
+  transform: translate(-50%,-50%) rotate(0deg)
+  transition: all ease 0.5s
+
+  &::before, &::after
+    content: ""
+    position: absolute
+    height: inherit
+    border-radius: inherit
+    background-color: inherit
+    margin: auto
+    width: 50%
+    transition: all ease 0.5s
+
+  &::before
+    top: -10px
+    left: 0
+    transform-origin: left
+
+  &::after
+    bottom: -10px
+    right: 0
+    transform-origin: right
+
+
+.open
+  transform: translate(-50%,-50%) rotate(135deg)
+  background-color: #fff
+
+  &::before
+    top: 0
+    transform: translateX(100%) rotate(-90deg)
+
+  &::after
+    bottom: 0
+    transform: translateX(-100%) rotate(-90deg)

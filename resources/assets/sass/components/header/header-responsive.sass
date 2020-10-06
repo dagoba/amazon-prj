@@ -1,0 +1,52 @@
+.menu
+  display: none
+.header
+  @media #{$tablet}
+    &--nav
+      padding: 22px 0px
+      flex-wrap: wrap
+
+    &--navlink
+      display: none
+      width: 100%
+      text-align: center
+      order: 3
+    &--contact
+      text-align: left
+
+      &_link
+        margin-left: 0px
+        margin-right: 20px
+    &--logo
+      margin-top: 1px
+
+    .nav-block
+      width: 100%
+      margin-top: 20px
+
+      &-item
+        width: 100%
+
+      &_link
+        display: block
+    .menu
+      display: block
+
+  @media #{$mobile}
+    &--contact
+      &_link
+        &_mail
+          display: none
+    &--nav
+      width: 100%
+
+    &--usernav
+      width: 100%
+      text-align: center
+
+    &--logo
+      margin: 0 auto 20px
+
+.hide-menu
+  display: block
+

@@ -1,0 +1,58 @@
+.description
+  padding-top: $tb_padding
+  padding-bottom: $tb_padding
+  
+  &--title
+    font-size: 40px
+    text-align: center
+    text-transform: uppercase
+
+  &--text
+
+    &-item
+      font-size: 17px
+      line-height: 30px
+
+.cards
+  padding-left: 30px
+  padding-right: 30px
+  &--flex
+    display: flex
+    background-color: $white
+    padding-top: 40px
+    padding-bottom: 40px
+
+  &--item
+    width: calc(100%/5)
+    text-align: center
+    padding: 40px 0px
+    &:last-child
+      border: none
+
+    &:hover
+      box-shadow: $box_shadow
+
+    &-ico
+      display: inline-block
+      width: 70px
+      height: 66px
+      background-position: 0px -287px
+      &.-first
+
+      &.-second
+        background-position-x: -78px
+
+      &.-third
+        background-position-x: -153px
+
+      &.-fourth
+        background-position-x: -233px
+
+      &.-fifth
+        background-position-x: -304px
+
+      &.-sixth
+        background-position-x: -378px
+
+    &-text
+      font-weight: 700

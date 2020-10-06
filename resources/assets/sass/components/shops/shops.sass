@@ -1,0 +1,63 @@
+.shops
+  padding-top: $tb_padding
+  padding-bottom: $tb_padding
+
+  &--title
+    @include gradient-text
+    display: inline-block
+    font-size: $title_size
+
+
+  &--item
+    width: 100%
+    min-width: 1300px
+    border: 1px solid #f2f2f2
+    background-color: $white
+    border-radius: 3px
+    margin-bottom: 3px
+
+    &:hover
+      box-shadow: $box_shadow
+    &_td
+      padding: 10px 15px
+      min-width: 50px
+      &:nth-of-type(11)
+        @include min-max-width(80px)
+
+      &:nth-of-type(1)
+        @include min-max-width(30px)
+
+    &_name
+      @include min-max-width(350px)
+
+    &_money
+      @include min-max-width(90px)
+
+    &_rating
+      @include min-max-width(130px)
+
+    &_rank
+      @include min-max-width(90px)
+
+    &_sellers
+      @include min-max-width(50px)
+
+    &_brand
+      @include min-max-width(200px)
+
+  &--flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.rating--ico
+  width: 10px
+  height: 10px
+  display: inline-block
+  background-position: -5px -401px
+  &.-star
+    background-position-x: -22px
+
+.outer-shop
+  width: 100%
+  overflow-x: auto

@@ -1,0 +1,202 @@
+.page
+  &--top
+    padding: 50px 0px
+    background: transparent url($img_path + 'bg3.jpg') no-repeat center top / cover
+
+  &--flex
+    display: flex
+    align-item: center
+    justify-content: space-between
+    align-self: center
+
+  &--breadcrumbrs
+    align-self: center
+    margin-bottom: 0
+    white-space: nowrap
+    padding-left: 30px
+
+    &_link
+      position: relative
+      color: white
+      text-transform: uppercase
+      padding-right: 30px
+      margin-right: 10px
+
+      &::before
+        position: absolute
+        content: '→'
+        right: 0
+        top: -5px
+        font-size: 18px
+
+    &_text
+      text-transform: uppercase
+      color: white
+
+  &--title
+    color: white
+    font-weight: normal
+    font-size: 62px
+    margin-bottom: 0
+
+  &--subtitle
+    color: white
+    font-size: 18px
+    font-weight: normal
+    margin-bottom: 0
+
+  &--content
+    padding: 50px 0px
+
+  &--contact
+    display: flex
+    justify-content: space-between
+
+    &_item
+      margin-right: 2%
+      margin-bottom: 30px
+
+    &_title
+      text-transform: uppercase
+      font-size: 18px
+      font-weight: bold
+
+  &--map
+    position: relative
+    padding-bottom: 50%
+    height: 0
+    overflow: hidden
+
+    &_iframe
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+  &--form
+    background: transparent url($img_path + 'bg_contact.jpg') no-repeat center top / cover
+    padding: 40px 30px
+    margin-top: 40px
+    display: flex
+
+    &-left
+      width: 40%
+      padding-right: 30px
+
+    &-right
+      width: 60%
+
+    &-input
+      @include inputAmazon
+      margin-bottom: 10px
+      color: #fff
+
+    &-textarea
+      @include inputAmazon
+      height: 142px
+      margin-bottom: 10px
+      resize: none
+      color: #fff
+
+.afil
+  width: 80%
+  padding: 30px 0
+  margin: 0px auto
+  border-bottom: 1px solid #cccccc
+
+  &_title
+    font-weight: 300
+    margin-bottom: 0px
+
+  &_flex
+    display: flex
+    justify-content: space-between
+
+  &_grad
+    @include gradient-text
+    font-size: 24px
+
+.-left_line
+  border-left: 2px solid #32ccca
+  padding-left: 30px
+
+.-black-block
+  width: 40px
+  background-color: #494850
+  display: inline-block
+  text-align: center
+  font-size: 24px
+  color: #fff
+  margin-right: 15px
+  padding: 3px 0px
+  margin-top: 5px
+
+.-black-block_2
+  margin-left: 60px
+.-black-block_3
+  margin-left: 120px
+
+.left-review
+  width: 30%
+  padding-right: 30px
+  float: left
+  @media #{$tablet}
+    display: none
+
+.right-review
+  width: 70%
+  float: left
+  @media #{$tablet}
+    width: 100%
+
+
+.our-recomend
+  position: relative
+  font-size: 42px
+.line-green
+  height: 3px
+  width: 150px
+  background-color: #32ccca
+  display: inline-block
+  margin-bottom: 30px
+
+.rew
+  background: #fff
+  border-radius: 5px
+  margin-bottom: 30px
+
+.rew_name
+  font-size: 18px
+  background-color: #494850
+  width: 100%
+  padding: 30px
+  color: #fff
+  height: 110px
+  border-radius: 5px 5px 0px 0px
+  text-align: center
+  span
+    text-transform: uppercase
+    font-size: 18px
+
+.right-review_sec
+  width: 50%
+  padding: 0px 15px
+  float: left
+  @media #{$mobile}
+    width: 100%
+
+.left-review_sec
+  width: 50%
+  padding: 0px 15px
+  float: left
+  @media #{$mobile}
+    width: 100%
+
+.rew_text
+  padding: 30px
+
+.-upperxx
+  p
+    text-transform: uppercase
+    margin-bottom: 25px
+    font-size: 20px

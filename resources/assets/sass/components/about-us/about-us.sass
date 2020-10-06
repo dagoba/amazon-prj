@@ -1,0 +1,82 @@
+.about-us
+  p
+    font-size: 17px
+    text-align: justify
+
+  &--title
+    font-size: 42px
+    @include gradient-text
+    display: inline-block
+    font-weight: normal
+    position: relative
+    
+  &--block
+    display: flex
+    margin-bottom: 50px
+    justify-content: space-between
+
+  &--left
+    width: 45%
+    padding-right: 50px
+
+  &--right
+    width: calc(55% - 50px)
+
+  &--sub
+    font-size: 36px
+    font-weight: normal
+
+  &.-white
+    background-color: white
+
+  &--work_img
+    padding: 70px 0px
+
+  &--work_title
+    font-size: 24px
+    padding-left: 100px
+    margin-bottom: 50px
+    color: #fff
+
+  &--work_img
+    &::before
+      width: 74px
+      height: 142px
+      background-position: -2px -468px
+      top: 0
+
+  &--work_img_right
+    &::before
+      background-position-x: -78px
+
+  &_benefits
+    background: transparent url($img_path + 'benefits.jpg') no-repeat left center / cover
+
+.center-align
+  text-align: center
+
+.work_item
+  padding-left: 100px
+  position: relative
+  margin-bottom: 20px
+  color: #fff
+
+  &::before
+    position: absolute
+    content: '01.'
+    font-size: 32px
+    color: #00c2e9
+    left: 0
+    top: calc(50% - 22px)
+
+  &_2
+    &::before
+      content: '02.'
+
+  &_3
+    &::before
+      content: '03.'
+
+  &.-green
+    &::before
+      color: #06e5ab

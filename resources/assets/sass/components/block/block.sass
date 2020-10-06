@@ -1,0 +1,35 @@
+.block
+	&
+		width: 100%
+
+	&--in
+		max-width: $max_width
+		margin: 0 auto
+		padding: 0 $block_padding
+
+	&--content
+		width: 70%
+		margin-right: 2.5%
+		flex: 0 0 70%
+
+.sprite
+	background: transparent url($img_path + $sprite) no-repeat 0 0 / 451px 614px
+
+.sprite_before
+	position: relative
+
+	&::before
+		position: absolute
+		content: ''
+		background: transparent url($img_path + $sprite) no-repeat 0 0 / 451px 614px
+
+.sprite_logo
+	background: transparent url($img_path + $sprite_logo) no-repeat 0 0 / 383px 659px
+
+.sprite_pay
+	background: transparent url($img_path + $sprite_pay) no-repeat -10px 0
+
+.flex-block
+	display: flex
+	justify-content: space-between
+	align-items: center

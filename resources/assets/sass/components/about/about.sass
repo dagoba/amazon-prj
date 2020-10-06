@@ -1,0 +1,66 @@
+.about
+  padding-top: $tb_padding
+  padding-bottom: $tb_padding
+
+  &--title
+    font-size: $title_size
+    text-align: center
+    margin-bottom: 30px
+
+  &--slider
+    &_col
+      border-radius: 10px
+      background: $white
+      margin: 0px 10px
+      text-align: center
+      box-shadow: 0 0 10px rgba($black, .1)
+      display: flex !important
+      flex-wrap: wrap
+      padding-bottom: 30px
+
+    &_item
+      width: 90px
+      height: 90px
+      border-radius: 20px
+      transform: rotate(45deg)
+      margin: 10px auto 40px
+      overflow: hidden
+
+    &_ico
+      display: block
+      width: 120px
+      height: 120px
+      background: transparent url($img_path + 'tj.png') no-repeat center top / cover
+      transform: rotate(-45deg)
+      position: relative
+      top: -10px
+      left: -13px
+      opacity: 0.7
+      &:hover
+        opacity: 1
+
+.slider
+  &--text
+    text-align: justify
+    padding: 30px
+
+  &--name
+    font-size: 18px
+    background-color: #494850
+    width: 100%
+    padding: 30px
+    color: #fff
+    height: 110px
+    border-radius: 10px 10px 0px 0px
+
+    &_blue
+      color: #fff
+      text-transform: uppercase
+
+.slick-track
+  display: flex !important
+  margin: 10px auto !important
+  flex: 0 0 100%
+
+.slick-slide
+  height: auto !important
